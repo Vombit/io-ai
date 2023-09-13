@@ -4,8 +4,8 @@ services:
     build: .
     container_name: telegram_ai_bot
     environment:
-      TELEGRAM_TOKEN: 12345567:AFMFASJJEFMVSDFME#$#EF234234r2
-      API_OPENAI: sk-cTVm9ERFKSJFUERUNEROGNJRDFVBJDFVJJJkhbdfkjnv
+      TELEGRAM_TOKEN: your:token
+      API_OPENAI: your-token
     volumes:
       - telegram_ai_bot:/app/data
     restart: always
