@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  telegram_ai_bot:
+    build: .
+    container_name: telegram_ai_bot
+    environment:
+      TELEGRAM_TOKEN: 12345567:AFMFASJJEFMVSDFME#$#EF234234r2
+      API_OPENAI: sk-cTVm9ERFKSJFUERUNEROGNJRDFVBJDFVJJJkhbdfkjnv
+    volumes:
+      - telegram_ai_bot:/app/data
+    restart: always
+
+volumes:
+  telegram_ai_bot:
+    external: true
